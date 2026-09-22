@@ -1,5 +1,7 @@
 # TraceGate
 
+[![Tests](https://github.com/Steve5829/tracegate/actions/workflows/ci.yml/badge.svg)](https://github.com/Steve5829/tracegate/actions/workflows/ci.yml)
+
 **A deterministic policy gate and audit/replay harness for structured tool plans.**
 
 An agent proposes three operations: read a project note, fetch Python documentation, and write a review. TraceGate validates the entire JSON plan, checks each operation against an explicit policy, and emits a reproducible decision. A path traversal, a look-alike hostname, an unknown argument, or an oversized request makes the plan fail.
