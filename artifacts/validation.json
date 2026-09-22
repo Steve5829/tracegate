@@ -1,0 +1,22 @@
+{
+  "recorded_at_utc": "2026-09-22T02:41:18+00:00",
+  "runtime": "CPython 3.11.15",
+  "platform": "darwin",
+  "unit_tests": {
+    "runner": "unittest discovery in tests/",
+    "run": 50,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true
+  },
+  "replay": {
+    "total": 25,
+    "passed": 25,
+    "failed": 0,
+    "deterministic": true,
+    "suite_sha256": "72a4ab5e47a6442ed9683c3c52178efafd54b2ae1d84d178328dd4de86ea24aa",
+    "policy_sha256": "30e061eb7e1c3db39f9004036449d1b3d5c44ad43fded1da536702a47addd72e"
+  },
+  "scope": "Local tests and deliberately selected fixtures; no external adoption, production reliability, or security-completeness claim."
+}

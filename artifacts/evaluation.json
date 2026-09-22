@@ -1,0 +1,362 @@
+{
+  "evaluation_version": 1,
+  "suite_sha256": "72a4ab5e47a6442ed9683c3c52178efafd54b2ae1d84d178328dd4de86ea24aa",
+  "policy_sha256": "30e061eb7e1c3db39f9004036449d1b3d5c44ad43fded1da536702a47addd72e",
+  "total": 25,
+  "passed": 25,
+  "failed": 0,
+  "deterministic": true,
+  "reason_counts": {
+    "http.method": 1,
+    "http.response_limit": 1,
+    "http.timeout": 1,
+    "path.invalid": 4,
+    "path.outside_allowlist": 1,
+    "plan.step_limit": 1,
+    "read.limit": 1,
+    "schema.invalid": 3,
+    "url.credentials": 1,
+    "url.fragment": 1,
+    "url.host": 3,
+    "url.port": 1,
+    "url.scheme": 1,
+    "write.limit": 1,
+    "write.overwrite": 1
+  },
+  "cases": [
+    {
+      "name": "documentation-review-dry-run",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "dry-run",
+      "actual_outcome": "dry-run",
+      "expected_codes": [],
+      "actual_codes": [],
+      "report_sha256": "0da30c8f6f60355c5365bade19ea405d98a3678d3bc337d7e2d445a7ad70ec7d"
+    },
+    {
+      "name": "documentation-review-approval",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "approve",
+      "actual_outcome": "approve",
+      "expected_codes": [],
+      "actual_codes": [],
+      "report_sha256": "8abaea388c88741588ee0a3f86bf4b76a989dfdb3861109edf08bb368c424ef6"
+    },
+    {
+      "name": "github-readonly-request",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "dry-run",
+      "actual_outcome": "dry-run",
+      "expected_codes": [],
+      "actual_codes": [],
+      "report_sha256": "b0c2e41f9ebba4dcc8b7346f3a8ff75430052c1e838eab7fae15b981d6a13162"
+    },
+    {
+      "name": "blocked-export",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "http.method",
+        "path.invalid",
+        "url.host"
+      ],
+      "actual_codes": [
+        "http.method",
+        "path.invalid",
+        "url.host"
+      ],
+      "report_sha256": "2facb9bf14695d43031e2dec1f4053da3289b1cb7845720cad6193521a181a3b"
+    },
+    {
+      "name": "path-prefix-collision",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "path.outside_allowlist"
+      ],
+      "actual_codes": [
+        "path.outside_allowlist"
+      ],
+      "report_sha256": "2bafddeb9fa3f58757493e9b30cfd0ae15f4fcb870a6a505efd0553210da3a4e"
+    },
+    {
+      "name": "nested-traversal",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "path.invalid"
+      ],
+      "actual_codes": [
+        "path.invalid"
+      ],
+      "report_sha256": "d6dfa996f8f33ddd6a27131bb97f194f83d1287c73dfa5b32a7d55561c20b147"
+    },
+    {
+      "name": "windows-path",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "path.invalid"
+      ],
+      "actual_codes": [
+        "path.invalid"
+      ],
+      "report_sha256": "e5fb919788975307aef0c920f9b5c12a32e231cf4033a16046855786ee3e1015"
+    },
+    {
+      "name": "encoded-traversal",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "path.invalid"
+      ],
+      "actual_codes": [
+        "path.invalid"
+      ],
+      "report_sha256": "8be49d6e2b414d1c5f5189d804947df40066527f73e0928dac5f01e2d98452b7"
+    },
+    {
+      "name": "boolean-byte-limit",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "schema.invalid"
+      ],
+      "actual_codes": [
+        "schema.invalid"
+      ],
+      "report_sha256": "b801812859bbd73b732dce910e17241dea1b9f91bb037d131466373d94b81cfc"
+    },
+    {
+      "name": "unknown-tool",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "schema.invalid"
+      ],
+      "actual_codes": [
+        "schema.invalid"
+      ],
+      "report_sha256": "79f47b6bce1d5a295808e82b2d9c769d7c2a5459f3dd9d9c3d0d06941813590d"
+    },
+    {
+      "name": "unknown-argument",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "schema.invalid"
+      ],
+      "actual_codes": [
+        "schema.invalid"
+      ],
+      "report_sha256": "45ed8f310bfcc4896ef7ccba0052d607e184a74ec9b99a2e449db2b58fcac98c"
+    },
+    {
+      "name": "host-suffix-confusion",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "url.host"
+      ],
+      "actual_codes": [
+        "url.host"
+      ],
+      "report_sha256": "a5dc6a8fa0840a1346660f4e8152a0e48758ade743face82dd3ac6a9a8d5d738"
+    },
+    {
+      "name": "url-credentials",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "url.credentials"
+      ],
+      "actual_codes": [
+        "url.credentials"
+      ],
+      "report_sha256": "c29a45eb04c3f09a4f01d4ab99dcf83ac26d5548fc268d66ee5fe2589692b978"
+    },
+    {
+      "name": "insecure-scheme",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "url.scheme"
+      ],
+      "actual_codes": [
+        "url.scheme"
+      ],
+      "report_sha256": "228c4de9407efa1cf5dc7db1da5031f583b282a12713df8c2590513070326dac"
+    },
+    {
+      "name": "custom-port",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "url.port"
+      ],
+      "actual_codes": [
+        "url.port"
+      ],
+      "report_sha256": "526dfe67af7b844de97881289b0a085b2c792ef1639170b30ec6bf7aaf4dca1a"
+    },
+    {
+      "name": "oversized-read",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "read.limit"
+      ],
+      "actual_codes": [
+        "read.limit"
+      ],
+      "report_sha256": "4f7401a1b03f35e8a3c3e4565ccadfd1de7541147f57ae6e15d98beb55bb5894"
+    },
+    {
+      "name": "oversized-response",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "http.response_limit"
+      ],
+      "actual_codes": [
+        "http.response_limit"
+      ],
+      "report_sha256": "de6e9f0ea2243abecb06c91893e5cfed108f79300c5b63bf89996899bb023cc2"
+    },
+    {
+      "name": "long-timeout",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "http.timeout"
+      ],
+      "actual_codes": [
+        "http.timeout"
+      ],
+      "report_sha256": "31e5f45491c8ffa740656352d98b99b894ec179b24515daa69d844341c4913f2"
+    },
+    {
+      "name": "overwrite-refused",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "write.overwrite"
+      ],
+      "actual_codes": [
+        "write.overwrite"
+      ],
+      "report_sha256": "714de147f4da9d537b509386428241dd87d2c62040329f39686645bfa7fd7a17"
+    },
+    {
+      "name": "utf8-write-size",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "write.limit"
+      ],
+      "actual_codes": [
+        "write.limit"
+      ],
+      "report_sha256": "569f59b75a5f511fffac2ba45c54e29c22ea9ac7655cc08e892e71bf37f0c3a8"
+    },
+    {
+      "name": "empty-write-allowed",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "dry-run",
+      "actual_outcome": "dry-run",
+      "expected_codes": [],
+      "actual_codes": [],
+      "report_sha256": "573e78fd4fb3f8e6b06f803f300a980d2e6bf8296c58c005b97b026534a29922"
+    },
+    {
+      "name": "explicit-https-port",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "dry-run",
+      "actual_outcome": "dry-run",
+      "expected_codes": [],
+      "actual_codes": [],
+      "report_sha256": "78c211f0ca3c25e0739edb47fe06b6676c8a45ad38c9e455c14a12bdfed44dbc"
+    },
+    {
+      "name": "fragment-refused",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "url.fragment"
+      ],
+      "actual_codes": [
+        "url.fragment"
+      ],
+      "report_sha256": "c4bee835e22439fac4c75757b09b65964cd37d93e7474f1b3505b94353f6e10b"
+    },
+    {
+      "name": "ipv4-loopback-refused",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "url.host"
+      ],
+      "actual_codes": [
+        "url.host"
+      ],
+      "report_sha256": "1d92da7f9f95c17b68ce1d9ac8886362264fd13863cf6d4722b3a21b8a87fc01"
+    },
+    {
+      "name": "plan-step-budget",
+      "passed": true,
+      "deterministic": true,
+      "expected_outcome": "reject",
+      "actual_outcome": "reject",
+      "expected_codes": [
+        "plan.step_limit"
+      ],
+      "actual_codes": [
+        "plan.step_limit"
+      ],
+      "report_sha256": "57b76d4f1043cecb0e387dcb21ec6a550f517fdf4d476772f7f26b302d9d572c"
+    }
+  ]
+}

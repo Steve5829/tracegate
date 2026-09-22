@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tracegate"
+version = "0.1.0"
+description = "Deterministic policy checks and verifiable audit trails for structured tool plans"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Steve Chen"}]
+readme = "README.md"
+dependencies = []
+
+[project.scripts]
+tracegate = "tracegate.cli:main"
+
+[tool.setuptools]
+packages = ["tracegate"]

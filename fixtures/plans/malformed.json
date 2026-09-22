@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "plan_id": "unknown-argument",
+  "steps": [
+    {
+      "id": "read-context",
+      "tool": "file.read",
+      "args": {
+        "path": "workspace/notes/project.md",
+        "max_bytes": 4096,
+        "follow_symlinks": true
+      }
+    }
+  ]
+}

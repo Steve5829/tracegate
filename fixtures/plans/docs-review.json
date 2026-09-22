@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "plan_id": "docs-review",
+  "steps": [
+    {
+      "id": "read-context",
+      "tool": "file.read",
+      "args": {
+        "path": "workspace/notes/project.md",
+        "max_bytes": 4096
+      }
+    },
+    {
+      "id": "fetch-docs",
+      "tool": "http.request",
+      "args": {
+        "url": "https://docs.python.org/3/library/json.html",
+        "method": "GET",
+        "timeout_ms": 5000,
+        "max_response_bytes": 65536
+      }
+    },
+    {
+      "id": "write-review",
+      "tool": "file.write",
+      "args": {
+        "path": "workspace/reports/review.md",
+        "content": "# Review\nValidate tool arguments before policy evaluation.\n",
+        "overwrite": false
+      }
+    }
+  ]
+}

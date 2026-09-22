@@ -1,0 +1,55 @@
+test_append_verify_and_trusted_checkpoint (test_audit.AuditTests.test_append_verify_and_trusted_checkpoint) ... ok
+test_audit_omits_raw_plan_content_and_urls (test_audit.AuditTests.test_audit_omits_raw_plan_content_and_urls) ... ok
+test_canonical_line_format_is_enforced (test_audit.AuditTests.test_canonical_line_format_is_enforced) ... ok
+test_corrupt_chain_is_not_extended (test_audit.AuditTests.test_corrupt_chain_is_not_extended) ... ok
+test_decision_tamper_detected (test_audit.AuditTests.test_decision_tamper_detected) ... ok
+test_duplicate_json_keys_rejected_in_audit (test_audit.AuditTests.test_duplicate_json_keys_rejected_in_audit) ... ok
+test_empty_chain_and_invalid_checkpoint (test_audit.AuditTests.test_empty_chain_and_invalid_checkpoint) ... ok
+test_full_chain_rewrite_requires_external_checkpoint (test_audit.AuditTests.test_full_chain_rewrite_requires_external_checkpoint) ... ok
+test_partial_write_is_rejected (test_audit.AuditTests.test_partial_write_is_rejected) ... ok
+test_reordering_and_middle_deletion_detected (test_audit.AuditTests.test_reordering_and_middle_deletion_detected) ... ok
+test_tail_deletion_requires_external_checkpoint (test_audit.AuditTests.test_tail_deletion_requires_external_checkpoint) ... ok
+test_writer_lock_prevents_cooperating_concurrent_append (test_audit.AuditTests.test_writer_lock_prevents_cooperating_concurrent_append) ... ok
+test_audit_receipt_and_checkpoint_verification (test_cli.CliTests.test_audit_receipt_and_checkpoint_verification) ... ok
+test_dry_run_stdout_is_json (test_cli.CliTests.test_dry_run_stdout_is_json) ... ok
+test_invalid_input_exit_code (test_cli.CliTests.test_invalid_input_exit_code) ... ok
+test_rejected_plan_exit_code (test_cli.CliTests.test_rejected_plan_exit_code) ... ok
+test_replay_output_and_failure_exit_code (test_cli.CliTests.test_replay_output_and_failure_exit_code) ... ok
+test_approve_does_not_write_a_file (test_engine.GateTests.test_approve_does_not_write_a_file) ... ok
+test_boolean_float_and_string_are_not_integer_limits (test_engine.GateTests.test_boolean_float_and_string_are_not_integer_limits) ... ok
+test_component_prefix_not_string_prefix (test_engine.GateTests.test_component_prefix_not_string_prefix) ... ok
+test_default_is_dry_run (test_engine.GateTests.test_default_is_dry_run) ... ok
+test_duplicate_step_id_fails_schema (test_engine.GateTests.test_duplicate_step_id_fails_schema) ... ok
+test_fixture_replay_matches_all_expected_decisions (test_engine.GateTests.test_fixture_replay_matches_all_expected_decisions) ... ok
+test_host_is_exact_not_suffix_or_substring (test_engine.GateTests.test_host_is_exact_not_suffix_or_substring) ... ok
+test_http_method_timeout_and_response_limits (test_engine.GateTests.test_http_method_timeout_and_response_limits) ... ok
+test_invalid_step_count_and_container_types (test_engine.GateTests.test_invalid_step_count_and_container_types) ... ok
+test_known_but_disabled_tool_fails_policy (test_engine.GateTests.test_known_but_disabled_tool_fails_policy) ... ok
+test_legacy_ipv4_forms_cannot_be_allowlisted (test_engine.GateTests.test_legacy_ipv4_forms_cannot_be_allowlisted) ... ok
+test_missing_field_fails_schema (test_engine.GateTests.test_missing_field_fails_schema) ... ok
+test_nonfinite_and_surrogate_api_inputs_reject (test_engine.GateTests.test_nonfinite_and_surrogate_api_inputs_reject) ... ok
+test_object_key_order_does_not_change_hash (test_engine.GateTests.test_object_key_order_does_not_change_hash) ... ok
+test_one_denied_step_rejects_whole_plan (test_engine.GateTests.test_one_denied_step_rejects_whole_plan) ... ok
+test_overwrite_is_explicitly_blocked (test_engine.GateTests.test_overwrite_is_explicitly_blocked) ... ok
+test_path_traversal_and_ambiguous_paths (test_engine.GateTests.test_path_traversal_and_ambiguous_paths) ... ok
+test_plan_change_changes_hash (test_engine.GateTests.test_plan_change_changes_hash) ... ok
+test_policy_change_changes_hash (test_engine.GateTests.test_policy_change_changes_hash) ... ok
+test_policy_config_rejects_invalid_values (test_engine.GateTests.test_policy_config_rejects_invalid_values) ... ok
+test_policy_constructor_cannot_bypass_validation (test_engine.GateTests.test_policy_constructor_cannot_bypass_validation) ... ok
+test_policy_step_budget (test_engine.GateTests.test_policy_step_budget) ... ok
+test_read_limit_boundary (test_engine.GateTests.test_read_limit_boundary) ... ok
+test_replay_detects_changed_expectation (test_engine.GateTests.test_replay_detects_changed_expectation) ... ok
+test_replay_rejects_duplicate_case_names (test_engine.GateTests.test_replay_rejects_duplicate_case_names) ... ok
+test_result_is_deterministic_and_input_is_unchanged (test_engine.GateTests.test_result_is_deterministic_and_input_is_unchanged) ... ok
+test_strict_json_rejects_duplicates_nonfinite_and_bad_encoding (test_engine.GateTests.test_strict_json_rejects_duplicates_nonfinite_and_bad_encoding) ... ok
+test_unknown_keys_rejected_at_every_level (test_engine.GateTests.test_unknown_keys_rejected_at_every_level) ... ok
+test_unknown_mode_is_error (test_engine.GateTests.test_unknown_mode_is_error) ... ok
+test_unknown_tool_fails_schema (test_engine.GateTests.test_unknown_tool_fails_schema) ... ok
+test_url_credentials_fragments_scheme_and_port (test_engine.GateTests.test_url_credentials_fragments_scheme_and_port) ... ok
+test_url_parser_normalization_does_not_hide_controls (test_engine.GateTests.test_url_parser_normalization_does_not_hide_controls) ... ok
+test_utf8_write_limit_counts_bytes (test_engine.GateTests.test_utf8_write_limit_counts_bytes) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 0.204s
+
+OK

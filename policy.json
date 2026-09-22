@@ -1,0 +1,14 @@
+{
+  "policy_version": 1,
+  "name": "portfolio-demo",
+  "allowed_tools": ["file.read", "file.write", "http.request"],
+  "allowed_path_prefixes": ["workspace"],
+  "allowed_hosts": ["api.github.com", "docs.python.org"],
+  "allowed_methods": ["GET", "HEAD"],
+  "allow_overwrite": false,
+  "max_steps": 16,
+  "max_read_bytes": 65536,
+  "max_write_bytes": 32768,
+  "max_response_bytes": 262144,
+  "max_timeout_ms": 10000
+}
